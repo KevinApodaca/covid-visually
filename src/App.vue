@@ -26,7 +26,7 @@
     <div class="row mt-5" v-if="inICUArray.length > 0">
       <div class="col">
         <h2>In ICU</h2>
-        <line-chart :chartData="inICUArray" :options="chartOptions" label="ICU"></line-chart>
+        <line-chart :chartData="inICUArray" :options="chartOptions" label="ICU" :chartColors="inICUCasesChartColors"></line-chart>
       </div>
     </div>
 
@@ -75,7 +75,7 @@ export default {
         borderColor: '#077187',
         pointBorderColor: '#0E1428',
         pointBackgroundColor: '#AFD6AC',
-        backgroundColor: '#74A57F'
+        backgroundColor: '#21e6c1'
       },
       hospitalizedArray: [],
       hospitalizedCasesChartColors: {
@@ -85,6 +85,12 @@ export default {
         backgroundColor: '#858EAB'
       },
       inICUArray: [],
+      inICUCasesChartColors: {
+        borderColor: '#c5e3f6',
+        pointBorderColor: '#c5e3f6',
+        pointBackgroundColor: '#fc5c9c',
+        backgroundColor: '#fc5c9c'
+      },
       onVentilatorsArray: [],
       recoveredCasesArray: [],
       deathsConfirmedArray: [],
