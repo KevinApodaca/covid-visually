@@ -50,7 +50,7 @@
     <div class="row mt-5" v-if="deathsConfirmedArray.length > 0">
       <div class="col">
         <h2>Deaths</h2>
-        <line-chart :chartData="deathsConfirmedArray" :options="chartOptions" label="Deaths"></line-chart>
+        <line-chart :chartData="deathsConfirmedArray" :options="chartOptions" label="Deaths" :chartColors="deathsConfirmedCasesChartColors"></line-chart>
       </div>
     </div>
 
@@ -106,6 +106,12 @@ export default {
         backgroundColor: '#43dde6'
       },
       deathsConfirmedArray: [],
+      deathsConfirmedCasesChartColors: {
+        borderColor: '#002651',
+        pointBorderColor: '#002651',
+        pointBackgroundColor: '#775ada',
+        backgroundColor: '#775ada'
+      },
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false
