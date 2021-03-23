@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://covid-visually.netlify.app/"><img src="https://www.flaticon.com/svg/vstatic/svg/2920/2920349.svg?token=exp=1616541237~hmac=13ca7788666258f5280179b67b4e1903" alt="COVID Visually" width="200"></a>
+  <a href="https://covid-visually.netlify.app/"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F204%2F204304.png&f=1&nofb=1" alt="COVID Visually" width="200"></a>
   <br>
   COVID Visually
   <br>
@@ -20,7 +20,7 @@ You can checkout the app [here]('https://covid-visually.netlify.app/')
 * Total People Hospitalized (daily)
 * Total People in ICU (daily)
 * Total People on Ventilators (daily)
-* Total Peopl that Recovered (daily)
+* Total People that Recovered (daily)
 * Total Deaths Confirmed (daily)
 
 
