@@ -2,7 +2,7 @@
 import { Line } from 'vue-chartjs'
 
 export default {
-  extends: line,
+  extends: Line,
   props: {
     label: {
       type: String
