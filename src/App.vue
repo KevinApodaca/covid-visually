@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col text-center mt-5">
         <h1 class="display-4">COVID Visually</h1>
-        <p class="lead">A no nonsense tool to quickly visualize the spread of COVID-19 in the United States</p>
+        <p class="lead">A no nonsense tool to quickly visualize the COVID-19 statistics in the United States</p>
       </div>
     </div>
     <!-- POSITIVE CASES CHART -->
