@@ -1,6 +1,8 @@
 {
   "name": "covid-visually",
   "version": "0.1.0",
+  "description": "a COVID-19 data visualization tool for the modern web",
+  "repository": {"type": "git", "url": "https://github.com/KevinApodaca/covid-visually"},
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,8 +10,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bulma": "^0.9.2",
+    "chart.js": "^2.9.4",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "moment": "^2.29.1",
+    "vue": "^2.6.11",
+    "vue-chartjs": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
