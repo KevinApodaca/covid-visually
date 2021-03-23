@@ -20,7 +20,7 @@ export default {
 
     this.renderChart({
       labels: dates,
-      dataset: [{
+      datasets: [{
         label: this.label,
         data: totals,
       }]
