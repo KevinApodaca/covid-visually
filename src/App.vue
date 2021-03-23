@@ -6,17 +6,14 @@
         <p class="lead">A no nonsense tool to quickly visualize the spread of COVID-19 in the United States</p>
       </div>
     </div>
+    <!-- POSITIVE CASES CHART -->
     <div class="row mt-5" v-if="positiveCasesArray.length > 0">
       <div class="col">
         <h2>Positive</h2>
-        <line-chart
-          :chartData="positiveCasesArray"
-          :options="chartOptions"
-          label="Positive"
-          >
-          </line-chart>
+        <line-chart :chartData="positiveCasesArray" :options="chartOptions" label="Positive"></line-chart>
       </div>
     </div>
+    <!-- END POSITIVE CASES CHART -->
 
   </div>
 </template>
