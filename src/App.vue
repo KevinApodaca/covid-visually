@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <div class="row">
       <div class="col text-center mt-4">
-        <h1 class="display-3">COVID Visually</h1>
+        <h1 class="display-4">COVID Visually</h1>
         <p class="lead">A no nonsense tool to quickly visualize the spread of COVID-19 in the United States</p>
       </div>
     </div>
@@ -23,6 +23,16 @@
       </div>
     </div>
     <!-- END HOSPITALIZED CASES CHART -->
+
+    <!-- ICU CASES CHART -->
+    <div class="row mt-5" v-if="inICUArray.length > 0">
+      <div class="col">
+        <h2>In ICU</h2>
+        <line-chart :chartData="inICUArray" :options="chartOptions" label="ICU"></line-chart>
+      </div>
+    </div>
+    <!-- ICU CASES CHART -->
+
 
   </div>
 </template>
