@@ -126,7 +126,6 @@ export default {
       const date = moment(d.date, "YYYYMMDD").format("MM/DD")
       const { positive, hospitalizedCurrently, inIcuCurrently, onVentilatorCurrently, recovered, death} = d
 
-      /* PUSH DESTRUCTURED DATA INTO THE RESPECTIVE ARRAYS */
       this.positiveCasesArray.push({date, total: positive})
       this.hospitalizedArray.push({date, total: hospitalizedCurrently})
       this.inICUArray.push({date, total: inIcuCurrently})
