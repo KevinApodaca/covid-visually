@@ -10,7 +10,7 @@
     <div class="row mt-5" v-if="positiveCasesArray.length > 0">
       <div class="col">
         <h2>Positive</h2>
-        <line-chart :chartData="positiveCasesArray" :options="chartOptions" label="Positive"></line-chart>
+        <line-chart :chartData="positiveCasesArray" :options="chartOptions" label="Positive" :chartColors="positiveCasesChartColors"></line-chart>
       </div>
     </div>
 
@@ -71,6 +71,12 @@ export default {
   data () {
     return {
       positiveCasesArray: [],
+      positiveCasesChartColors: {
+        borderColor: '#077187',
+        pointBorderColor: '#0E1428',
+        pointBackgroundColor: '#AFD6AC',
+        backgroundColor: '#74A57F'
+      },
       hospitalizedArray: [],
       inICUArray: [],
       onVentilatorsArray: [],
