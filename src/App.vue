@@ -18,7 +18,7 @@
     <div class="row mt-5" v-if="hospitalizedArray.length > 0">
       <div class="col">
         <h2>Hospitalized</h2>
-        <line-chart :chartData="hospitalizedArray" :options="chartOptions" label="Hospitalized"></line-chart>
+        <line-chart :chartData="hospitalizedArray" :options="chartOptions" label="Hospitalized" :chartColors="hospitalizedCasesChartColors"></line-chart>
       </div>
     </div>
 
@@ -78,6 +78,12 @@ export default {
         backgroundColor: '#74A57F'
       },
       hospitalizedArray: [],
+      hospitalizedCasesChartColors: {
+        borderColor: '#251F47',
+        pointBorderColor: '#260F26',
+        pointBackgroundColor: '#858EAB',
+        backgroundColor: '#858EAB'
+      },
       inICUArray: [],
       onVentilatorsArray: [],
       recoveredCasesArray: [],
