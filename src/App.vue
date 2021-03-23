@@ -15,6 +15,15 @@
     </div>
     <!-- END POSITIVE CASES CHART -->
 
+    <!-- HOSPITALIZED CASES CHART -->
+    <div class="row mt-5" v-if="hospitalizedArray.length > 0">
+      <div class="col">
+        <h2>Hospitalized</h2>
+        <line-chart :chartData="hospitalizedArray" :options="chartOptions" label="Hospitalized"></line-chart>
+      </div>
+    </div>
+    <!-- END HOSPITALIZED CASES CHART -->
+
   </div>
 </template>
 
