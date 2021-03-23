@@ -4,6 +4,7 @@
       <div class="col text-center mt-5">
         <h1 class="display-4">COVID Visually</h1>
         <p class="lead">A no nonsense tool to quickly visualize the COVID-19 statistics in the United States</p>
+        <div class="alert alert-primary" role="alert"> Made with 💜 by <a href="https://github.com/KevinApodaca">Kevin Apodaca</a></div>
       </div>
     </div>
     <!-- POSITIVE CASES CHART -->
@@ -53,7 +54,6 @@
         <line-chart :chartData="deathsConfirmedArray" :options="chartOptions" label="Deaths" :chartColors="deathsConfirmedCasesChartColors"></line-chart>
       </div>
     </div>
-
 
   </div>
 </template>
