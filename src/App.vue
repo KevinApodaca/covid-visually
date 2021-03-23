@@ -34,7 +34,7 @@
     <div class="row mt-5" v-if="onVentilatorsArray.length > 0">
       <div class="col">
         <h2>On Ventilators</h2>
-        <line-chart :chartData="onVentilatorsArray" :options="chartOptions" label="Ventilators"></line-chart>
+        <line-chart :chartData="onVentilatorsArray" :options="chartOptions" label="Ventilators" :chartColors="onVentilatorsCasesChartColors"></line-chart>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
     <div class="row mt-5" v-if="recoveredCasesArray.length > 0">
       <div class="col">
         <h2>Recovered</h2>
-        <line-chart :chartData="recoveredCasesArray" :options="chartOptions" label="Recovered"></line-chart>
+        <line-chart :chartData="recoveredCasesArray" :options="chartOptions" label="Recovered" :chartColors="recoveredCasesChartColors"></line-chart>
       </div>
     </div>
 
@@ -92,7 +92,19 @@ export default {
         backgroundColor: '#fc5c9c'
       },
       onVentilatorsArray: [],
+      onVentilatorsCasesChartColors: {
+        borderColor: '#ff5959',
+        pointBorderColor: '#ff5959',
+        pointBackgroundColor: '#facf5a',
+        backgroundColor: '#facf5a'
+      },
       recoveredCasesArray: [],
+      recoveredCasesChartColors: {
+        borderColor: '#364f6b',
+        pointBorderColor: '#364f6b',
+        pointBackgroundColor: '#43dde6',
+        backgroundColor: '#43dde6'
+      },
       deathsConfirmedArray: [],
       chartOptions: {
         responsive: true,
