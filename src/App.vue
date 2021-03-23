@@ -1,5 +1,11 @@
 <template>
   <div id="app" class="container">
+    <div class="row">
+      <div class="col text-center mt-4">
+        <h1 class="display-3">COVID Visually</h1>
+        <p class="lead">A no nonsense tool to quickly visualize the spread of COVID-19 in the United States</p>
+      </div>
+    </div>
     <div class="row mt-5" v-if="positiveCasesArray.length > 0">
       <div class="col">
         <h2>Positive</h2>
