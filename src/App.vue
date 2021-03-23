@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <div class="row">
-      <div class="col text-center mt-4">
+      <div class="col text-center mt-5">
         <h1 class="display-4">COVID Visually</h1>
         <p class="lead">A no nonsense tool to quickly visualize the spread of COVID-19 in the United States</p>
       </div>
@@ -13,7 +13,6 @@
         <line-chart :chartData="positiveCasesArray" :options="chartOptions" label="Positive"></line-chart>
       </div>
     </div>
-    <!-- END POSITIVE CASES CHART -->
 
     <!-- HOSPITALIZED CASES CHART -->
     <div class="row mt-5" v-if="hospitalizedArray.length > 0">
@@ -22,7 +21,6 @@
         <line-chart :chartData="hospitalizedArray" :options="chartOptions" label="Hospitalized"></line-chart>
       </div>
     </div>
-    <!-- END HOSPITALIZED CASES CHART -->
 
     <!-- ICU CASES CHART -->
     <div class="row mt-5" v-if="inICUArray.length > 0">
@@ -31,7 +29,30 @@
         <line-chart :chartData="inICUArray" :options="chartOptions" label="ICU"></line-chart>
       </div>
     </div>
-    <!-- ICU CASES CHART -->
+
+    <!-- VENTILATOR CASES CHART -->
+    <div class="row mt-5" v-if="onVentilatorsArray.length > 0">
+      <div class="col">
+        <h2>On Ventilators</h2>
+        <line-chart :chartData="onVentilatorsArray" :options="chartOptions" label="Ventilators"></line-chart>
+      </div>
+    </div>
+
+    <!-- RECOVERED CASES CHART -->
+    <div class="row mt-5" v-if="recoveredCasesArray.length > 0">
+      <div class="col">
+        <h2>Recovered</h2>
+        <line-chart :chartData="recoveredCasesArray" :options="chartOptions" label="Recovered"></line-chart>
+      </div>
+    </div>
+
+    <!-- DEATHS CASES CHART -->
+    <div class="row mt-5" v-if="deathsConfirmedArray.length > 0">
+      <div class="col">
+        <h2>Deaths</h2>
+        <line-chart :chartData="deathsConfirmedArray" :options="chartOptions" label="Deaths"></line-chart>
+      </div>
+    </div>
 
 
   </div>
