@@ -6,7 +6,7 @@
         <line-chart
           :chartData="positiveCasesArray"
           :options="chartOptions"
-          :label="Positive"
+          label="Positive"
           >
           </line-chart>
       </div>
