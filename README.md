@@ -12,7 +12,7 @@
 ![screenshot](https://recordit.co/A3psD3bEjt.gif)
 
 ## View Project 🚀
-You can checkout the app [here]('https://covid-visually.netlify.app/')
+You can checkout the app [here](https://covid-visually.netlify.app/)
 
 ## Features ✨
 
